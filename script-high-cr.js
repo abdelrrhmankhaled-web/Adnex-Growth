@@ -1,5 +1,6 @@
 const WHATSAPP_NUMBER = "96181917684";
 const LEAD_EMAIL = "takkaads@gmail.com";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mojbpnow";
 
 const translations = {
   en: {
@@ -110,8 +111,10 @@ const translations = {
     budgetFour: "$20,000+",
     fieldChallenge: "What is the biggest campaign challenge?",
     formSubmit: "Send My Guidance Request",
-    formNote: "Demo form. Connect it to your CRM or email tool before publishing.",
+    formNote: "Your request will be saved securely for expert follow-up.",
     formSuccess: "Done. Your request is ready for expert follow-up.",
+    formSending: "Sending your request...",
+    formError: "Something went wrong. Please try again or contact us on WhatsApp.",
     footerText:
       "Expert guidance for business owners who want to manage ads smarter and reduce marketing waste.",
   },
@@ -222,8 +225,10 @@ const translations = {
     budgetFour: "أكثر من 20,000 دولار",
     fieldChallenge: "ما أكبر تحدي في حملاتك؟",
     formSubmit: "أرسل طلب التوجيه",
-    formNote: "نموذج تجريبي. اربطه بالـ CRM أو البريد قبل النشر.",
+    formNote: "سيتم حفظ طلبك للمتابعة من فريق الخبراء.",
     formSuccess: "تم. طلبك جاهز لمتابعة الخبير.",
+    formSending: "جاري إرسال طلبك...",
+    formError: "حدث خطأ. حاول مرة أخرى أو تواصل معنا على واتساب.",
     footerText:
       "توجيه خبراء لأصحاب المشاريع الذين يريدون إدارة الإعلانات بذكاء وتقليل هدر التسويق.",
   },
@@ -272,6 +277,19 @@ function leadEmailUrl(form) {
         ].join("\n");
 
   return `mailto:${LEAD_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+function leadPayload(form) {
+  return {
+    name: fieldValue(form, "name"),
+    business: fieldValue(form, "business"),
+    phone: fieldValue(form, "phone"),
+    budget: fieldValue(form, "budget"),
+    challenge: form.querySelector("textarea")?.value.trim() || "",
+    language: state.lang,
+    source: "ADNEX Website",
+    submittedAt: new Date().toISOString(),
+  };
 }
 
 function applyLanguage(lang) {
@@ -325,14 +343,31 @@ document.querySelectorAll(".nav a").forEach((link) => {
   link.addEventListener("click", () => document.querySelector(".topbar").classList.remove("open"));
 });
 
-document.querySelector("[data-lead-form]").addEventListener("submit", (event) => {
+document.querySelector("[data-lead-form]").addEventListener("submit", async (event) => {
   event.preventDefault();
   const form = event.currentTarget;
-  document.querySelector("[data-form-note]").textContent =
-    state.lang === "ar"
-      ? "تم تجهيز الرسالة. سيتم فتح البريد لإرسال الطلب."
-      : "Your email is ready. Your mail app will open to send the request.";
-  window.location.href = leadEmailUrl(form);
+  const note = document.querySelector("[data-form-note]");
+  const button = form.querySelector('button[type="submit"]');
+  note.textContent = translations[state.lang].formSending;
+  button.disabled = true;
+
+  try {
+    const response = await fetch(FORMSPREE_ENDPOINT, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(leadPayload(form)),
+    });
+    if (!response.ok) throw new Error("Form submission failed");
+    note.textContent = translations[state.lang].formSuccess;
+    form.reset();
+  } catch (error) {
+    note.textContent = translations[state.lang].formError;
+  } finally {
+    button.disabled = false;
+  }
 });
 
 applyLanguage(state.lang);
