@@ -972,6 +972,7 @@ input:focus, select:focus, textarea:focus {
   font-style: normal; font-size: 12px; font-weight: 900;
 }
 .plans-note { margin: 22px 0 0; text-align: center; color: var(--muted); }
-@media (max-width: 980px) {
-  .plan-grid { grid-template-columns: 1fr; }
-}
+.plan-grid.four { grid-template-columns: repeat(4, 1fr); }
+.plan-grid.four .plan-price strong { font-size: 36px; }
+@media (max-width: 1180px) { .plan-grid.four { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .plan-grid.four { grid-template-columns: 1fr; } }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="ADNEX: خطط توجيه واستشارات ومتابعة لأصحاب المشاريع اللي بيديروا إعلاناتهم بنفسهم أو ناويين يبدأوا. باقات تبدأ من 29$ في الشهر."
+      content="ADNEX: خطط توجيه واستشارات ومتابعة لأصحاب المشاريع الذين يديرون إعلاناتهم بأنفسهم أو يخططون للبدء. باقات تبدأ من 29$ شهرياً."
     />
     <meta property="og:title" content="ADNEX | توجيه ومتابعة لإعلاناتك" />
     <meta
@@ -44,9 +44,9 @@
       </a>
       <nav class="nav" aria-label="Main navigation">
         <a href="#plans" data-i18n="navPlans">الباقات</a>
-        <a href="#method" data-i18n="navMethod">كيف نشتغل</a>
+        <a href="#method" data-i18n="navMethod">آلية العمل</a>
         <a href="#free" data-i18n="navFree">تشخيص مجاني</a>
-        <a href="#faq" data-i18n="navFaq">أسئلة</a>
+        <a href="#faq" data-i18n="navFaq">الأسئلة الشائعة</a>
       </nav>
       <div class="top-actions">
         <button class="lang" type="button" data-lang-toggle>English</button>
@@ -59,34 +59,48 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow" data-i18n="heroEyebrow">مش وكالة. فريق خبراء معك في كل قرار.</p>
-            <h1 data-i18n-html="heroTitle"><span>بتدير إعلاناتك بنفسك؟</span><span>أو ناوي تبدأ؟</span></h1>
-            <p class="lead" data-i18n="heroLead">خطط توجيه واستشارات ومتابعة لأصحاب المشاريع. إنت بتدير حملاتك، ونحن نقول لك شو توقف، وشو تغيّر، ووين تصرف، حتى تبيع أكثر بنفس الميزانية.</p>
+            <div class="availability" data-i18n="availability">Limited onboarding slots this month</div>
+            <p class="eyebrow" data-i18n="heroEyebrow">Not an agency. Your growth guidance room.</p>
+            <h1 data-i18n-html="heroTitle"><span>No Agency Dependency.</span><span>Manage Ads. Grow Sales.</span></h1>
+            <p class="lead" data-i18n="heroLead">
+              ADNEX helps you reduce unnecessary marketing costs, make smarter campaign decisions, and turn expert
+              guidance into clearer sales growth.
+            </p>
+            <div class="positioning-note" data-i18n="positioningNote">
+              You stay in control. Our experts guide your decisions so every campaign move has a sales-growth reason.
+            </div>
             <div class="hero-actions">
-              <a class="btn primary" href="#plans" data-i18n="heroCtaPlans">شوف الباقات</a>
-              <a class="btn ghost" href="#free" data-i18n="heroCtaFree">تشخيص مجاني لحسابك</a>
+              <a class="btn primary" href="#apply" data-i18n="primaryCta">Get My Guidance Plan</a>
+              <a class="btn ghost" data-whatsapp href="#" target="_blank" rel="noreferrer" data-i18n="secondaryCta">WhatsApp an Expert</a>
             </div>
             <div class="trust-row">
-              <span data-i18n="trustOne">إنت المسؤول عن حسابك</span>
-              <span data-i18n="trustTwo">نحن معك قبل كل قرار</span>
-              <span data-i18n="trustThree">باقات تبدأ من 29$ شهرياً</span>
+              <span data-i18n="trustOne">You manage your campaigns</span>
+              <span data-i18n="trustTwo">We guide every key decision</span>
+              <span data-i18n="trustThree">Lower marketing dependency</span>
             </div>
           </div>
 
-          <aside class="conversion-panel" aria-label="ADNEX">
+          <aside class="conversion-panel" aria-label="ADNEX growth plan preview">
             <div class="panel-header">
               <span></span>
-              <strong data-i18n="panelTitle">شو بتاخد كل أسبوع</strong>
+              <strong data-i18n="panelTitle">Sales Growth Guidance Preview</strong>
             </div>
             <div class="score-card">
-              <p data-i18n="panelFrom">الباقات تبدأ من</p>
-              <strong>$29</strong>
-              <em data-i18n="panelPer">في الشهر · بدون عقد طويل</em>
+              <p data-i18n="growthScore">Sales-growth clarity</p>
+              <strong><span data-count="89">0</span>%</strong>
+              <em data-i18n="scoreLabel">after expert guidance</em>
             </div>
             <div class="diagnosis-list">
-              <div><span></span><p data-i18n="diagOne">مراجعة لأرقام حسابك</p></div>
-              <div><span></span><p data-i18n="diagTwo">رد على سؤالك قبل ما تغيّر الميزانية</p></div>
-              <div><span></span><p data-i18n="diagThree">قائمة قرارات واضحة تنفّذها بنفسك</p></div>
+              <div><span></span><p data-i18n="diagOne">Know which spend to stop first</p></div>
+              <div><span></span><p data-i18n="diagTwo">Get advice before changing budgets</p></div>
+              <div><span></span><p data-i18n="diagThree">Turn guidance into sales-focused actions</p></div>
+            </div>
+            <div class="mini-chart">
+              <i style="--h: 28%"></i>
+              <i style="--h: 52%"></i>
+              <i style="--h: 43%"></i>
+              <i style="--h: 76%"></i>
+              <i style="--h: 100%"></i>
             </div>
           </aside>
         </div>
@@ -96,7 +110,7 @@
         <div class="container strip-grid">
           <div><strong>$29</strong><span data-i18n="stripFrom">بداية الاشتراك الشهري</span></div>
           <div><strong data-i18n="stripFreeValue">مجاني</strong><span data-i18n="stripFree">تشخيص سريع لحسابك</span></div>
-          <div><strong>3</strong><span data-i18n="stripPlatforms">ميتا · تيك توك · سناب</span></div>
+          <div><strong>3</strong><span data-i18n="stripPlatforms">ميتا · تيك توك · سناب شات</span></div>
           <div><strong>0</strong><span data-i18n="stripAgency">اعتماد على وكالة</span></div>
         </div>
       </section>
@@ -104,10 +118,10 @@
       <section class="section not-agency">
         <div class="container not-agency-card">
           <div>
-            <p class="eyebrow" data-i18n="notAgencyEyebrow">لمين ADNEX؟</p>
-            <h2 data-i18n="notAgencyTitle">لأصحاب المشاريع اللي بيديروا إعلاناتهم بنفسهم، أو ناويين يبدأوا.</h2>
+            <p class="eyebrow" data-i18n="notAgencyEyebrow">لمن ADNEX؟</p>
+            <h2 data-i18n="notAgencyTitle">لأصحاب المشاريع الذين يديرون إعلاناتهم بأنفسهم، أو يخططون للبدء.</h2>
           </div>
-          <p data-i18n="notAgencyBody">ما منستلم حسابك ولا منشغّل الحملات بدالك. منراجع أرقامك، ومنقول لك شو القرار الصح، وإنت بتنفّذ. هيك بتفهم حسابك، وبتوفّر مصاريف الوكالة.</p>
+          <p data-i18n="notAgencyBody">لا نتولّى إدارة حسابك ولا نشغّل الحملات نيابةً عنك. نراجع أرقامك، ونخبرك بالقرار الصحيح، وأنت تنفّذه. بذلك تفهم حسابك، وتوفّر تكاليف الوكالة.</p>
         </div>
       </section>
 
@@ -115,12 +129,12 @@
         <div class="container problem-grid">
           <div class="section-copy">
             <p class="eyebrow" data-i18n="problemEyebrow">المشكلة</p>
-            <h2 data-i18n="problemTitle">أغلب الفلوس بتضيع بقرارات صغيرة ما حدا شرحها لك.</h2>
+            <h2 data-i18n="problemTitle">معظم ميزانية الإعلانات تضيع في قرارات صغيرة لم يشرحها لك أحد.</h2>
           </div>
           <div class="problem-cards">
-            <article><b>01</b><h3 data-i18n="problemOneTitle">بتصرف وما بتعرف شو اللي جاب البيع</h3><p data-i18n="problemOneBody">الأرقام كثيرة، ومش واضح أي إعلان رابح وأي إعلان لازم يوقف.</p></article>
-            <article><b>02</b><h3 data-i18n="problemTwoTitle">بتغيّر الميزانية على الإحساس</h3><p data-i18n="problemTwoBody">تكبير أو إيقاف بوقت غلط ممكن يرجّع الحملة لنقطة الصفر.</p></article>
-            <article><b>03</b><h3 data-i18n="problemThreeTitle">الوكالة غالية، ولوحدك صعب</h3><p data-i18n="problemThreeBody">بدك حدا خبير ترجع له قبل القرار، بدون ما تدفع اشتراك وكالة كامل.</p></article>
+            <article><b>01</b><h3 data-i18n="problemOneTitle">تصرف دون أن تعرف ما الذي جلب المبيعات</h3><p data-i18n="problemOneBody">الأرقام كثيرة، وليس واضحاً أي إعلان ناجح وأي إعلان يجب إيقافه.</p></article>
+            <article><b>02</b><h3 data-i18n="problemTwoTitle">تغيّر الميزانية بناءً على الإحساس</h3><p data-i18n="problemTwoBody">زيادة الميزانية أو الإيقاف في التوقيت الخطأ قد يعيد الحملة إلى نقطة الصفر.</p></article>
+            <article><b>03</b><h3 data-i18n="problemThreeTitle">الوكالة مكلفة، والعمل وحدك صعب</h3><p data-i18n="problemThreeBody">تحتاج إلى خبير ترجع إليه قبل القرار، دون أن تدفع اشتراك وكالة كاملاً.</p></article>
           </div>
         </div>
       </section>
@@ -129,76 +143,56 @@
         <div class="container">
           <div class="section-head center">
             <p class="eyebrow" data-i18n="plansEyebrow">الباقات</p>
-            <h2 data-i18n="plansTitle">اختار الباقة اللي بتناسب مرحلتك</h2>
-            <p class="plans-sub" data-i18n="plansSub">كل الأسعار بالدولار. وفّر 20% إذا دفعت 3 أشهر مقدّماً.</p>
+            <h2 data-i18n="plansTitle">اختر الباقة المناسبة لمرحلتك</h2>
+            <p class="plans-sub" data-i18n="plansSub">جميع الأسعار بالدولار. وفّر 20% عند الدفع لثلاثة أشهر مقدّماً.</p>
           </div>
-
-          <h3 class="plans-group" data-i18n="monthlyGroup">الاشتراكات الشهرية</h3>
-          <div class="plan-grid">
+          <div class="plan-grid four">
+            <article class="plan">
+              <h3 data-i18n="planAuditName">التشخيص الكامل</h3>
+              <p class="plan-for" data-i18n="planAuditFor">لمعرفة أين تضيع ميزانيتك</p>
+              <p class="plan-price"><strong>$49</strong><span data-i18n="oneTime">/ مرة واحدة</span></p>
+              <ul data-i18n-html="planAuditList"><li>مراجعة كاملة لحسابك الإعلاني</li><li>تقرير مكتوب يتضمن 10 قرارات مرتّبة حسب الأولوية</li><li>مكالمة لمدة 20 دقيقة لشرح التقرير</li><li>يُخصم المبلغ من أول شهر إذا اشتركت خلال 7 أيام</li></ul>
+              <a class="btn ghost" href="#apply" data-plan="audit" data-i18n="planCtaOnce">اطلب التشخيص</a>
+            </article>
             <article class="plan">
               <h3 data-i18n="planCommunityName">مجتمع ADNEX</h3>
-              <p class="plan-for" data-i18n="planCommunityFor">لتتعلّم وتسأل مع أصحاب مشاريع مثلك</p>
+              <p class="plan-for" data-i18n="planCommunityFor">للتعلّم وطرح الأسئلة مع أصحاب مشاريع مثلك</p>
               <p class="plan-price"><strong>$29</strong><span data-i18n="perMonth">/ شهرياً</span></p>
-              <ul data-i18n-html="planCommunityList"><li>جروب واتساب خاص بالمشتركين</li><li>لايف أسبوعي للأسئلة مع الخبراء</li><li>ملفات جاهزة: خطوات الإطلاق، قراءة الأرقام، أفكار الإعلانات</li><li>رد على سؤالك بالجروب خلال 48 ساعة</li></ul>
-              <a class="btn ghost" href="#apply" data-plan="community" data-i18n="planCta">اشترك</a>
+              <ul data-i18n-html="planCommunityList"><li>مجموعة واتساب خاصة بالمشتركين</li><li>بث مباشر أسبوعي للأسئلة مع الخبراء</li><li>أدلّة جاهزة: خطوات الإطلاق، وقراءة الأرقام، وأفكار الإعلانات</li><li>رد على أسئلتك في المجموعة خلال 48 ساعة</li></ul>
+              <a class="btn ghost" href="#apply" data-plan="community" data-i18n="planCta">اشترك الآن</a>
             </article>
             <article class="plan featured">
               <em class="plan-badge" data-i18n="badgePopular">الأكثر طلباً</em>
-              <h3 data-i18n="planPersonalName">متابعة شخصية</h3>
-              <p class="plan-for" data-i18n="planPersonalFor">لحسابك إنت، على منصة واحدة</p>
+              <h3 data-i18n="planPersonalName">المتابعة الشخصية</h3>
+              <p class="plan-for" data-i18n="planPersonalFor">متابعة حسابك أنت على منصة واحدة</p>
               <p class="plan-price"><strong>$69</strong><span data-i18n="perMonth">/ شهرياً</span></p>
-              <ul data-i18n-html="planPersonalList"><li>كل اللي بمجتمع ADNEX</li><li>مراجعة أسبوعية لحسابك برسالة صوتية</li><li>رد خاص على واتساب خلال 24 ساعة</li><li>مكالمة شهرية 30 دقيقة لخطة الشهر</li></ul>
-              <a class="btn primary" href="#apply" data-plan="personal" data-i18n="planCta">اشترك</a>
+              <ul data-i18n-html="planPersonalList"><li>كل مزايا مجتمع ADNEX</li><li>مراجعة أسبوعية لحسابك برسالة صوتية</li><li>رد خاص عبر واتساب خلال 24 ساعة</li><li>مكالمة شهرية لمدة 30 دقيقة لوضع خطة الشهر</li></ul>
+              <a class="btn primary" href="#apply" data-plan="personal" data-i18n="planCta">اشترك الآن</a>
             </article>
             <article class="plan">
-              <h3 data-i18n="planGrowthName">متابعة نمو</h3>
-              <p class="plan-for" data-i18n="planGrowthFor">لمشروع بيصرف أكثر وعلى منصتين</p>
+              <h3 data-i18n="planGrowthName">متابعة النمو</h3>
+              <p class="plan-for" data-i18n="planGrowthFor">للمشاريع التي تُعلن على منصتين</p>
               <p class="plan-price"><strong>$129</strong><span data-i18n="perMonth">/ شهرياً</span></p>
-              <ul data-i18n-html="planGrowthList"><li>كل اللي بالمتابعة الشخصية</li><li>منصتين بدل منصة وحدة</li><li>مراجعة مرتين بالأسبوع</li><li>رأينا بالإعلانات قبل ما تنزل</li><li>رد بنفس اليوم ومكالمتين بالشهر</li></ul>
-              <a class="btn ghost" href="#apply" data-plan="growth" data-i18n="planCta">اشترك</a>
+              <ul data-i18n-html="planGrowthList"><li>كل مزايا المتابعة الشخصية</li><li>منصتان بدلاً من منصة واحدة</li><li>مراجعة مرتين في الأسبوع</li><li>رأينا في إعلاناتك قبل نشرها</li><li>رد في اليوم نفسه ومكالمتان شهرياً</li></ul>
+              <a class="btn ghost" href="#apply" data-plan="growth" data-i18n="planCta">اشترك الآن</a>
             </article>
           </div>
-
-          <h3 class="plans-group" data-i18n="onceGroup">خدمات لمرة وحدة</h3>
-          <div class="plan-grid">
-            <article class="plan">
-              <h3 data-i18n="planQuickName">تشخيص سريع</h3>
-              <p class="plan-for" data-i18n="planQuickFor">لتعرف وين المشكلة</p>
-              <p class="plan-price"><strong data-i18n="freeWord">مجاني</strong></p>
-              <ul data-i18n-html="planQuickList"><li>بتبعت لنا سكرينات من حسابك</li><li>منرد عليك برسالة صوتية فيها أكبر 3 مشاكل</li></ul>
-              <a class="btn ghost" href="#apply" data-plan="free" data-i18n="planCtaFree">اطلب التشخيص</a>
-            </article>
-            <article class="plan">
-              <h3 data-i18n="planAuditName">تشخيص كامل</h3>
-              <p class="plan-for" data-i18n="planAuditFor">إذا عندك حملات شغّالة</p>
-              <p class="plan-price"><strong>$49</strong></p>
-              <ul data-i18n-html="planAuditList"><li>تقرير مكتوب فيه 10 قرارات مرتّبة حسب الأولوية</li><li>مكالمة 20 دقيقة نشرح فيها التقرير</li><li>المبلغ بينخصم من أول شهر إذا اشتركت خلال 7 أيام</li></ul>
-              <a class="btn ghost" href="#apply" data-plan="audit" data-i18n="planCtaOnce">اطلب</a>
-            </article>
-            <article class="plan">
-              <h3 data-i18n="planLaunchName">خطة البداية</h3>
-              <p class="plan-for" data-i18n="planLaunchFor">إذا ناوي تبدأ إعلاناتك</p>
-              <p class="plan-price"><strong>$69</strong></p>
-              <ul data-i18n-html="planLaunchList"><li>خطة إطلاق مكتوبة: المنصة، الميزانية، الجمهور، أفكار الإعلانات</li><li>قائمة اللي لازم تجهّزه قبل الإطلاق (البيكسل وصفحة الهبوط)</li></ul>
-              <a class="btn ghost" href="#apply" data-plan="launch" data-i18n="planCtaOnce">اطلب</a>
-            </article>
-          </div>
-          <p class="plans-note" data-i18n="referralNote">جيب صاحب مشروع يشترك، وخود شهر مجاني.</p>
+          <p class="plans-note" data-i18n="referralNote">رشّح صاحب مشروع يشترك معنا، واحصل على شهر مجاني.</p>
         </div>
       </section>
 
       <section id="method" class="section method">
         <div class="container method-layout">
           <div class="method-copy">
-            <p class="eyebrow" data-i18n="methodEyebrow">كيف نشتغل</p>
-            <h2 data-i18n="methodTitle">إنت بتنفّذ، ونحن معك بكل خطوة.</h2>
+            <p class="eyebrow" data-i18n="methodEyebrow">آلية العمل</p>
+            <h2 data-i18n="methodTitle">أنت تنفّذ، ونحن معك في كل خطوة.</h2>
             <a class="btn primary" href="#apply" data-i18n="navCta">ابدأ الآن</a>
           </div>
           <div class="steps">
-            <article><span>1</span><h3 data-i18n="stepOneTitle">بتبعت لنا حسابك</h3><p data-i18n="stepOneBody">سكرينات أو صلاحية مشاهدة فقط. ما منغيّر شي بحسابك.</p></article>
-            <article><span>2</span><h3 data-i18n="stepTwoTitle">منراجع الأرقام</h3><p data-i18n="stepTwoBody">منشرح لك بلغة بسيطة شو عم يصير، وشو اللي عم يضيّع فلوسك.</p></article>
-            <article><span>3</span><h3 data-i18n="stepThreeTitle">بتاخد قرارات واضحة</h3><p data-i18n="stepThreeBody">شو توقف، شو تكبّر، شو تجرّب، وبأي ترتيب.</p></article>
-            <article><span>4</span><h3 data-i18n="stepFourTitle">منتابع معك</h3><p data-i18n="stepFourBody">كل أسبوع منشوف النتيجة سوا ومنحدد الخطوة الجاية.</p></article>
+            <article><span>1</span><h3 data-i18n="stepOneTitle">ترسل لنا حسابك</h3><p data-i18n="stepOneBody">لقطات شاشة أو صلاحية مشاهدة فقط. لا نغيّر أي شيء في حسابك.</p></article>
+            <article><span>2</span><h3 data-i18n="stepTwoTitle">نراجع الأرقام</h3><p data-i18n="stepTwoBody">نشرح لك بلغة بسيطة ما يحدث، وما الذي يُهدر ميزانيتك.</p></article>
+            <article><span>3</span><h3 data-i18n="stepThreeTitle">تحصل على قرارات واضحة</h3><p data-i18n="stepThreeBody">ماذا توقف، وماذا تزيد، وماذا تجرّب، وبأي ترتيب.</p></article>
+            <article><span>4</span><h3 data-i18n="stepFourTitle">نتابع معك</h3><p data-i18n="stepFourBody">كل أسبوع نراجع النتائج معاً ونحدد الخطوة التالية.</p></article>
           </div>
         </div>
       </section>
@@ -206,11 +200,11 @@
       <section id="free" class="section mid-cta">
         <div class="container cta-card">
           <div>
-            <p class="eyebrow" data-i18n="freeEyebrow">جرّبنا ببلاش</p>
-            <h2 data-i18n="freeTitle">ابعت سكرينات من حسابك، وخود أكبر 3 مشاكل فيه برسالة صوتية.</h2>
+            <p class="eyebrow" data-i18n="freeEyebrow">جرّبنا مجاناً</p>
+            <h2 data-i18n="freeTitle">أرسل لقطات شاشة من حسابك، واحصل على أكبر 3 مشكلات فيه برسالة صوتية.</h2>
           </div>
           <div class="cta-actions">
-            <a class="btn primary" href="#apply" data-plan="free" data-i18n="planCtaFree">اطلب التشخيص</a>
+            <a class="btn primary" href="#apply" data-plan="free" data-i18n="planCtaFree">اطلب التشخيص المجاني</a>
             <a class="btn ghost" data-whatsapp href="#" target="_blank" rel="noreferrer" data-i18n="secondaryCta">راسلنا واتساب</a>
           </div>
         </div>
@@ -219,16 +213,16 @@
       <section id="faq" class="section faq">
         <div class="container faq-layout">
           <div class="section-copy">
-            <p class="eyebrow" data-i18n="faqEyebrow">أسئلة</p>
-            <h2 data-i18n="faqTitle">قبل ما تبدأ.</h2>
+            <p class="eyebrow" data-i18n="faqEyebrow">الأسئلة الشائعة</p>
+            <h2 data-i18n="faqTitle">قبل أن تبدأ.</h2>
           </div>
           <div class="faq-list">
-            <details open><summary data-i18n="faqOneQ">هل بتديروا إعلاناتي عني؟</summary><p data-i18n="faqOneA">لا. ADNEX مش وكالة. إنت بتدير حسابك، ونحن منراجع ومنوجّهك قبل كل قرار.</p></details>
-            <details><summary data-i18n="faqTwoQ">ما عندي خبرة، بنفع لي؟</summary><p data-i18n="faqTwoA">إيه. خطة البداية مخصّصة للي ناوي يبدأ، ومجتمع ADNEX فيه ملفات خطوة بخطوة.</p></details>
-            <details><summary data-i18n="faqThreeQ">أي منصات بتغطّوا؟</summary><p data-i18n="faqThreeA">ميتا (فيسبوك وإنستغرام)، تيك توك، وسناب شات.</p></details>
-            <details><summary data-i18n="faqFourQ">كيف بدفع؟</summary><p data-i18n="faqFourA">بعد ما تختار الباقة، منبعت لك على واتساب طرق الدفع المتاحة ببلدك.</p></details>
-            <details><summary data-i18n="faqFiveQ">بقدر ألغي الاشتراك؟</summary><p data-i18n="faqFiveA">إيه، الاشتراك شهري وبتقدر توقفه قبل الشهر الجاي.</p></details>
-            <details><summary data-i18n="faqSixQ">بأي دول بتشتغلوا؟</summary><p data-i18n="faqSixA">لبنان، العراق، الأردن، سوريا، قطر والكويت.</p></details>
+            <details open><summary data-i18n="faqOneQ">هل تديرون إعلاناتي نيابةً عني؟</summary><p data-i18n="faqOneA">لا. ADNEX ليست وكالة. أنت تدير حسابك، ونحن نراجعه ونوجّهك قبل كل قرار.</p></details>
+            <details><summary data-i18n="faqTwoQ">ليست لدي خبرة، هل الخدمة مناسبة لي؟</summary><p data-i18n="faqTwoA">نعم. مجتمع ADNEX يتضمن أدلّة خطوة بخطوة، والمتابعة الشخصية ترافقك من أول إعلان.</p></details>
+            <details><summary data-i18n="faqThreeQ">ما المنصات التي تغطّونها؟</summary><p data-i18n="faqThreeA">ميتا (فيسبوك وإنستغرام)، وتيك توك، وسناب شات.</p></details>
+            <details><summary data-i18n="faqFourQ">كيف أدفع؟</summary><p data-i18n="faqFourA">بعد اختيار الباقة، نرسل لك عبر واتساب طرق الدفع المتاحة في بلدك.</p></details>
+            <details><summary data-i18n="faqFiveQ">هل يمكنني إلغاء الاشتراك؟</summary><p data-i18n="faqFiveA">نعم، الاشتراك شهري ويمكنك إيقافه قبل بداية الشهر التالي.</p></details>
+            <details><summary data-i18n="faqSixQ">في أي دول تعملون؟</summary><p data-i18n="faqSixA">لبنان، والعراق، والأردن، وسوريا، وقطر، والكويت.</p></details>
           </div>
         </div>
       </section>
@@ -236,19 +230,19 @@
       <section id="apply" class="section apply">
         <div class="container apply-grid">
           <div class="apply-copy">
-            <p class="eyebrow" data-i18n="applyEyebrow">ابدأ من هون</p>
-            <h2 data-i18n="applyTitle">قلّنا وين وصلت، ومنرجع لك على واتساب.</h2>
-            <p data-i18n="applyBody">عبّي الفورم، ومنتواصل معك لنتفق على الباقة المناسبة وطريقة الدفع.</p>
+            <p class="eyebrow" data-i18n="applyEyebrow">ابدأ من هنا</p>
+            <h2 data-i18n="applyTitle">أخبرنا أين وصلت، وسنتواصل معك عبر واتساب.</h2>
+            <p data-i18n="applyBody">املأ النموذج، وسنتواصل معك للاتفاق على الباقة المناسبة وطريقة الدفع.</p>
             <ul>
-              <li data-i18n="applyOne">رد خلال يوم عمل</li>
+              <li data-i18n="applyOne">رد خلال يوم عمل واحد</li>
               <li data-i18n="applyTwo">التشخيص السريع مجاني</li>
-              <li data-i18n="applyThree">ما منطلب كلمة سر حسابك</li>
+              <li data-i18n="applyThree">لا نطلب كلمة مرور حسابك</li>
             </ul>
           </div>
           <form class="lead-form" data-lead-form>
             <label><span data-i18n="fieldName">الاسم</span><input id="f-name" name="name" required /></label>
             <label><span data-i18n="fieldBusiness">اسم المشروع</span><input id="f-business" name="business" required /></label>
-            <label><span data-i18n="fieldCountry">البلد</span>
+            <label><span data-i18n="fieldCountry">الدولة</span>
               <select id="f-country" name="country">
                 <option value="Lebanon +961" data-i18n="cLb">لبنان (961+)</option>
                 <option value="Iraq +964" data-i18n="cIq">العراق (964+)</option>
@@ -256,39 +250,38 @@
                 <option value="Syria +963" data-i18n="cSy">سوريا (963+)</option>
                 <option value="Qatar +974" data-i18n="cQa">قطر (974+)</option>
                 <option value="Kuwait +965" data-i18n="cKw">الكويت (965+)</option>
-                <option value="Other" data-i18n="cOther">بلد آخر</option>
+                <option value="Other" data-i18n="cOther">دولة أخرى</option>
               </select>
             </label>
             <label><span data-i18n="fieldPhone">رقم واتساب</span><input id="f-phone" name="phone" type="tel" inputmode="tel" required /></label>
-            <label><span data-i18n="fieldStage">وين وصلت؟</span>
+            <label><span data-i18n="fieldStage">أين وصلت؟</span>
               <select id="f-stage" name="stage">
-                <option value="running" data-i18n="stageRunning">عم دير إعلاناتي حالياً</option>
-                <option value="starting" data-i18n="stageStarting">ناوي أبدأ</option>
+                <option value="running" data-i18n="stageRunning">أدير إعلاناتي حالياً</option>
+                <option value="starting" data-i18n="stageStarting">أخطط للبدء</option>
               </select>
             </label>
-            <label><span data-i18n="fieldPlan">الباقة اللي بتهمّك</span>
+            <label><span data-i18n="fieldPlan">الباقة التي تهمّك</span>
               <select id="f-plan" name="plan">
                 <option value="free" data-i18n="optFree">تشخيص سريع (مجاني)</option>
-                <option value="audit" data-i18n="optAudit">تشخيص كامل ($49)</option>
-                <option value="launch" data-i18n="optLaunch">خطة البداية ($69)</option>
-                <option value="community" data-i18n="optCommunity">مجتمع ADNEX ($29 شهرياً)</option>
-                <option value="personal" data-i18n="optPersonal">متابعة شخصية ($69 شهرياً)</option>
-                <option value="growth" data-i18n="optGrowth">متابعة نمو ($129 شهرياً)</option>
-                <option value="unsure" data-i18n="optUnsure">مش متأكد، ساعدوني</option>
+                <option value="audit" data-i18n="optAudit">التشخيص الكامل (49$)</option>
+                <option value="community" data-i18n="optCommunity">مجتمع ADNEX (29$ شهرياً)</option>
+                <option value="personal" data-i18n="optPersonal">المتابعة الشخصية (69$ شهرياً)</option>
+                <option value="growth" data-i18n="optGrowth">متابعة النمو (129$ شهرياً)</option>
+                <option value="unsure" data-i18n="optUnsure">لست متأكداً، ساعدوني في الاختيار</option>
               </select>
             </label>
-            <label class="wide"><span data-i18n="fieldBudget">ميزانية الإعلانات بالشهر</span>
+            <label class="wide"><span data-i18n="fieldBudget">ميزانية الإعلانات الشهرية</span>
               <select id="f-budget" name="budget">
-                <option data-i18n="budgetZero">لسه ما بلّشت</option>
+                <option data-i18n="budgetZero">لم أبدأ بعد</option>
                 <option data-i18n="budgetOne">أقل من 500$</option>
                 <option data-i18n="budgetTwo">500$ – 2,000$</option>
                 <option data-i18n="budgetThree">2,000$ – 5,000$</option>
                 <option data-i18n="budgetFour">أكثر من 5,000$</option>
               </select>
             </label>
-            <label class="wide"><span data-i18n="fieldChallenge">شو أكبر مشكلة أو سؤال عندك؟</span><textarea id="f-challenge" name="challenge" rows="4"></textarea></label>
+            <label class="wide"><span data-i18n="fieldChallenge">ما أكبر مشكلة أو سؤال لديك؟</span><textarea id="f-challenge" name="challenge" rows="4"></textarea></label>
             <button class="btn primary wide" type="submit" data-i18n="formSubmit">أرسل الطلب</button>
-            <p class="form-note wide" data-form-note data-i18n="formNote">منرد عليك على واتساب خلال يوم عمل.</p>
+            <p class="form-note wide" data-form-note data-i18n="formNote">سنرد عليك عبر واتساب خلال يوم عمل واحد.</p>
           </form>
         </div>
       </section>
@@ -297,13 +290,13 @@
     <footer class="footer">
       <div class="container">
         <img src="./assets/adnex-logo-lime-hq.png" alt="ADNEX" />
-        <p data-i18n="footerText">توجيه ومتابعة لأصحاب المشاريع اللي بيديروا إعلاناتهم بنفسهم.</p>
+        <p data-i18n="footerText">توجيه ومتابعة لأصحاب المشاريع الذين يديرون إعلاناتهم بأنفسهم.</p>
         <a data-whatsapp href="#" target="_blank" rel="noreferrer" data-i18n="secondaryCta">راسلنا واتساب</a>
       </div>
     </footer>
 
     <div class="mobile-bar">
-      <a href="#plans" data-i18n="heroCtaPlans">شوف الباقات</a>
+      <a href="#apply" data-i18n="primaryCta">Get My Growth Plan</a>
       <a data-whatsapp href="#" target="_blank" rel="noreferrer" data-i18n="mobileWhatsapp">واتساب</a>
     </div>
     <script src="./script-high-cr.js"></script>
